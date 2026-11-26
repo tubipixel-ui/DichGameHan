@@ -342,7 +342,7 @@ public class OverlayService extends Service {
                 Rect box = blocks.get(i).getBoundingBox();
                 int lines = Math.max(1, blocks.get(i).getLines().size());
                 float scaled = getResources().getDisplayMetrics().scaledDensity;
-                float textSize = Math.max(11, Math.min(18, box.height() / lines / scaled * 0.8f));
+                float textSize = Math.max(8, Math.min(13, box.height() / lines / scaled * 0.65f));
                 TextView label = new TextView(this);
                 label.setText(tasks.get(i).getResult());
                 label.setTextColor(Color.WHITE);
